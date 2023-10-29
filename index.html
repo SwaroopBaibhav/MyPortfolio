@@ -22,6 +22,15 @@
     <link rel="stylesheet" href="assets/css/Modern-Contact-Form.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
+<script>
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+</script>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77" style="font-family: 'Chivo Mono'!important;">
     <nav class="navbar navbar-expand-md fixed-top navbar-light" id="mainNav" style="font-family: 'Chivo Mono', monospace;">

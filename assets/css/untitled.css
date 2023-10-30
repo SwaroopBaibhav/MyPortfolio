@@ -1,4 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+@media (min-width: 992px) {
+  .justify-content-lg-center {
+    justify-content: center !important;
+  }
+}
 

@@ -40,6 +40,12 @@ if (history.scrollRestoration) {
   #frame {
     display: none;
   }
+  #tips{
+    display: inline !important;
+    font-size: 10px !important;
+    text-align: center;
+  }
+
 }
 
 </style>
@@ -50,7 +56,11 @@ if (history.scrollRestoration) {
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item nav-link"><a class="nav-link active" href="#about">ABOUT ME</a></li>
                     <li class="nav-item nav-link"><a class="nav-link" href="#download">EXPERIENCES</a></li>
-                    <li class="nav-item nav-link"><a class="nav-link" href="#join_me">more</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#join_me">MORE</a></li>
+                    <div id="tips" style="display: none;">
+                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <p style="font-family: Pixelify Sans;" id="tips">SWITCH TO LANDSCAPE MODE FOR BETTER VIEW !</p>
+                    </div>
                 </ul>
             </div>
         </div>

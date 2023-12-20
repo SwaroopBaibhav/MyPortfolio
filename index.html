@@ -35,6 +35,29 @@ if (history.scrollRestoration) {
 }
 </script>
 
+<!-- time and date -->
+<script>
+    function updateDateTime() {
+      const now = new Date();
+      const currentDateTime = now.toLocaleDateString();
+    //   const currentDateTime = now.toLocaleString();
+      document.querySelector('#datetime').textContent = currentDateTime;
+    }
+    setInterval(updateDateTime, 1000);
+</script>
+
+<!-- age -->
+<script>
+    const birthday = new Date("11-09-2003");
+    function age() {
+      const now = new Date();
+      const age = now.getFullYear() - birthday.getFullYear();
+      document.querySelector('#age').textContent = age.toString();
+
+    }
+    setInterval(age, 1000);
+</script>
+
 <style>
     @media (max-width: 768px) {
   #frame {
@@ -50,6 +73,9 @@ if (history.scrollRestoration) {
 
 </style>
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77" style="font-family: 'Chivo Mono'!important;">
+    <div id="time" style="font-family: Pixelify Sans; display: flex; justify-content: center; background-color: green; height: 0px;">
+        <p id="datetime" style="font-size: 25px;"></p>
+    </div>
     <nav class="navbar navbar-expand-md fixed-top navbar-light" id="mainNav" style="font-family: 'Chivo Mono', monospace;">
         <div class="container"><a class="navbar-brand" href="#" style="font-family: 'Almendra SC', serif;font-size: 30px;">PORTFOLIO</a><button data-bs-toggle="collapse" class="navbar-toggler swing animated navbar-toggler-right" data-bs-target="#navbarResponsive" data-bss-disabled-mobile="true" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -85,7 +111,7 @@ if (history.scrollRestoration) {
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 style="font-family: 'Chivo Mono', monospace; padding-bottom: 15px;">About me</h2>
-                    <p style="font-family: 'Chivo Mono', monospace;">Good day, I am Swaroop Baibhav. Right now I am pursuing my Btech Degree In Computer Science with Artificial Intellegence and Machine Learning (AIML). I have been a tech-fan since my childhood. It&nbsp;fascinates me a lot. Recently I've been learning Web-Development and this is some of my tweaks at&nbsp; my <a href="https://github.com/SwaroopBaibhav" target="_blank">Github.</a></p>
+                    <p style="font-family: 'Chivo Mono', monospace;">Good day, I am <a href="" style="text-decoration: none;"> Swaroop Baibhav, </a><span id="age"></span>. Right now I am pursuing my Btech Degree In Computer Science with Artificial Intellegence and Machine Learning (AIML). I have been a tech-fan since my childhood. It&nbsp;fascinates me a lot. Recently I've been learning Web-Development and this is some of my tweaks at&nbsp; my <a href="https://github.com/SwaroopBaibhav" target="_blank">Github.</a></p>
                     <p>I've also been a Front-End Developer for&nbsp;<a href="https://softdyze.com/" target="_blank">SOFTDYZE</a>. I've also managed to acquire knowledge in new fields like Back-End and IOT.</p>
                     <p>Talking about my passion, its always been FAST CARS and serving welfare to animals.</p>
                 </div>

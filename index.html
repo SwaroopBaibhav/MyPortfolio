@@ -182,17 +182,17 @@ if (history.scrollRestoration) {
     </ul>
     <p style="padding-top: 25px;">Feel free to leave a comment on how to improve my portfolio and don&#39;t forget to give some feedback about this theme!</p>
     <div class="modern-form__form-container" style="margin-top: -25px;">
-        <form>
+        <form name='FEEDBACK' method='POST' netlify>
             <div class="row">
                 <div class="col col-contact">
-                    <div class="modern-form__form-group--padding-r form-group mb-3"><input class="form-control input input-tr" type="text" placeholder="First Name" />
+                    <div class="modern-form__form-group--padding-r form-group mb-3"><input class="form-control input input-tr" type="text" placeholder="First Name" name='name' />
                         <div class="line-box">
                             <div class="line"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col col-contact">
-                    <div class="modern-form__form-group--padding-l form-group mb-3"><input class="form-control input input-tr" type="text" placeholder="Email" />
+                    <div class="modern-form__form-group--padding-l form-group mb-3"><input class="form-control input input-tr" type="text" placeholder="Email" name='email'/>
                         <div class="line-box">
                             <div class="line"></div>
                         </div>
@@ -201,7 +201,7 @@ if (history.scrollRestoration) {
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="modern-form__form-group--padding-t form-group mb-3"><textarea class="form-control input modern-form__form-control--textarea" placeholder="Message"></textarea>
+                    <div class="modern-form__form-group--padding-t form-group mb-3"><textarea class="form-control input modern-form__form-control--textarea" placeholder="Message" name='message'></textarea>
                         <div class="line-box">
                             <div class="line"></div>
                         </div>
